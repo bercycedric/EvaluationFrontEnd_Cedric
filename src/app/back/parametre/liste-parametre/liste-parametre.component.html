@@ -1,0 +1,24 @@
+<div class="row mt-3">
+    <div class="col-4">
+        <app-menu-dashboard></app-menu-dashboard>
+    </div>
+        
+    <div class="col-8">
+        <h1>Gestion des Paramètres</h1>
+    
+    <div>
+        <a href="/admin/parametre/ajouter-parametre" class="btn btn-primary my-3">Ajouter des nouveaux Paramètres</a>
+    </div>
+   
+    <table class="table table-striped">
+        <tbody>
+            <tr *ngFor="let parametres of parametres">
+                <td>
+                    {{parametres.information}}
+                </td>
+              
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
